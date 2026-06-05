@@ -6,7 +6,7 @@
 ## 📖 Overview
 The **Eureka Server** is the heart of the microservices topology. Rather than hardcoding IP addresses and ports, all services (API Gateway, Auth, Order, Inventory, Notification) register themselves with Eureka upon startup. This allows for dynamic scaling, load balancing, and resilient service-to-service communication.
 
-[⬅️ Back to Main Repository](https://github.com/yourusername/bitlord-computer-parts)
+[⬅️ Back to Main Repository](https://github.com/MalingaBandara/Bitlord-Computer-Parts)
 
 ## 🛠️ Tech Stack
 - **Language**: Java 17
