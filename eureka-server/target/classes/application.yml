@@ -1,15 +1,15 @@
 server:
-  port: 8761
+  port: 8761  # Standard default port for Eureka Discovery Server
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: localhost  # Hostname this Eureka server is reachable at
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: false  # Eureka server should not register itself as a client
+    fetch-registry: false  # Eureka server does not need to fetch registry from another Eureka
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  # Self-referencing URL — tells clients where to reach this Eureka server
 
 spring:
   application:
-    name: eureka-server
+    name: eureka-server  # Service name for this Eureka Discovery Server instance
